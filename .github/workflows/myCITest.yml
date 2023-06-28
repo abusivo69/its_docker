@@ -29,7 +29,7 @@ jobs:
       - name: POST build action
         run: docker images
       - name: RUN docker
-        run: docker  run -it -d -p 8080:80 my-test-ci:latest
+        run: docker run -it -d -p8080:80 my-test-ci:latest
       - name: TEST webserver ocker
         run: wget http://localhost:8080
       - name: SHOW test resurlt
